@@ -335,6 +335,8 @@ DEPENDENCIES
   rails (~> 8.0.0)
   rswag-api
   rswag-ui
+  rubocop
+  rubocop-rails
   rubocop-rails-omakase
   solid_cable
   solid_cache
