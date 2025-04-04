@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Table Processor API</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      line-height: 1.6;
+      color: #333;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    h1 {
+      color: #2c3e50;
+      border-bottom: 2px solid #eee;
+      padding-bottom: 10px;
+    }
+    h2 {
+      color: #3498db;
+      margin-top: 30px;
+    }
+    .card {
+      background: #f9f9f9;
+      border-radius: 5px;
+      padding: 20px;
+      margin: 20px 0;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    code {
+      background: #f1f1f1;
+      padding: 2px 5px;
+      border-radius: 3px;
+      font-family: monospace;
+    }
+    pre {
+      background: #f1f1f1;
+      padding: 15px;
+      border-radius: 5px;
+      overflow-x: auto;
+    }
+    .button {
+      display: inline-block;
+      background: #3498db;
+      color: white;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      margin-top: 20px;
+    }
+    .button:hover {
+      background: #2980b9;
+    }
+  </style>
+</head>
+<body>
+  <h1>Table Processor API</h1>
+  
+  <div class="card">
+    <h2>About This Application</h2>
+    <p>
+      The Table Processor API is a specialized tool designed to convert HTML tables into an LLM-friendly format.
+      It processes complex table structures with merged cells, headers, and various formatting to produce a clean,
+      structured output that can be easily understood by language models.
+    </p>
+    <p>
+      This API is particularly useful for applications that need to extract structured data from HTML tables
+      and make it available for AI processing, analysis, or presentation.
+    </p>
+  </div>
+  
+  <div class="card">
+    <h2>Key Features</h2>
+    <ul>
+      <li>Processes complex HTML tables with merged cells</li>
+      <li>Handles multi-level headers (both row and column)</li>
+      <li>Converts tables into a clean key-value format</li>
+      <li>Optimized for LLM consumption</li>
+      <li>Fast and efficient processing</li>
+    </ul>
+  </div>
+  
+  <div class="card">
+    <h2>How to Use</h2>
+    <p>
+      To use this API, you need to send a POST request to the endpoint with HTML table content.
+      The API will process the table and return a structured format that is optimized for LLM consumption.
+    </p>
+    <p>
+      For detailed API documentation, including request/response formats and examples, please visit our API documentation.
+    </p>
+    <a href="/api-docs" class="button">Go to API Documentation</a>
+  </div>
+  
+  <div class="card">
+    <h2>Example</h2>
+    <p>Input HTML:</p>
+    <pre><code>&lt;table&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Name&lt;/th&gt;
+    &lt;th&gt;Age&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;John&lt;/td&gt;
+    &lt;td&gt;30&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;</code></pre>
+    
+    <p>Output Format:</p>
+    <pre><code>Name: John
+Age: 30</code></pre>
+  </div>
+  
+  <footer style="margin-top: 40px; text-align: center; color: #777; font-size: 0.9em;">
+    <p>Table Processor API &copy; <%= Time.current.year %></p>
+  </footer>
+</body>
+</html> 
