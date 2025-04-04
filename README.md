@@ -2,6 +2,10 @@
 
 A Ruby on Rails API for converting HTML tables into a format suitable for parsing by language models.
 
+## Live Demo
+
+The Table Processor API is now available at [www.ichi.rest](https://www.ichi.rest). You can visit the website to learn more about the service and access the API documentation.
+
 ## Overview
 
 This API takes HTML table content and processes it to extract structured data in a key-value format that can be easily understood by language models. It handles complex table structures including merged cells, headers, and special formatting.
@@ -140,3 +144,4 @@ curl -X POST http://localhost:3000/api/v1/tables/process \
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
+
